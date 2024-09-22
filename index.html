@@ -22,6 +22,32 @@
         .year {
             font-size: 45px; /* Adjust the size to your needs */
         }
+
+        /* Styling for the navigation */
+        .navigation {
+            text-align: center;
+            padding: 10px 20px;
+        }
+
+        .navigation a {
+            font-size: 18px; /* Adjust the font size */
+            text-decoration: none;
+            padding: 10px 20px; /* Add padding to improve spacing */
+            display: inline-block;
+            color: #333; /* Change the color if needed */
+        }
+
+        .navigation a:hover {
+            color: #FFD700; /* Change the hover color */
+        }
+
+        /* Ensure the table is responsive and centers the content */
+        .navigation {
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            gap: 20px; /* Adjust the spacing between links */
+        }
     </style>
 </head>
 
@@ -37,25 +63,14 @@
         </div>
     </div>
 
-    <table class="navigation">
-        <tr>
-            <td class="navigation">
-                <a class="current" title="Conference Home Page" href=".">ACCUEIL</a>
-            </td>
-            <td class="navigation">
-                <a title="Register for the Conference" href="registration">A PROPOS</a>
-            </td>
-            <td class="navigation">
-                <a title="Conference Program" href="program">NOS SERVICES</a> 
-            </td>
-            <td class="navigation">
-                <a title="Directions to the Conference" href="directions">TESTS DE LANGUE</a>
-            </td>
-            <td class="navigation">
-                <a title="Conference Flyer" href="flyer">CONTACT</a>
-            </td>
-        </tr>
-    </table>
+    <!-- Updated navigation section -->
+    <div class="navigation">
+        <a class="current" title="Conference Home Page" href=".">ACCUEIL</a>
+        <a title="Register for the Conference" href="registration">A PROPOS</a>
+        <a title="Conference Program" href="program">NOS SERVICES</a> 
+        <a title="Directions to the Conference" href="directions">TESTS DE LANGUE</a>
+        <a title="Conference Flyer" href="flyer">CONTACT</a>
+    </div>
 
     <h2>What is This Website?</h2>
     <p>
