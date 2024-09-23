@@ -51,17 +51,42 @@
         }
 
         /* Contact information styling */
-        .contact-info {
+        .contact-container {
+            display: flex;
+            justify-content: center;
             margin: 40px 0;
-            text-align: center;
         }
 
-        .contact-info h3 {
+        .contact-info {
+            display: flex;
+            justify-content: space-between;
+            width: 70%;
+            gap: 50px;
+        }
+
+        .contact-column {
+            flex: 1;
+            text-align: left;
+        }
+
+        .contact-column h3 {
+            font-size: 22px;
             margin-bottom: 10px;
         }
 
+        .contact-column p, .contact-column a {
+            font-size: 18px;
+            color: #333;
+            text-decoration: none;
+        }
+
+        .contact-column a:hover {
+            color: #FFD700;
+        }
+
+        /* Social links styling */
         .social-links {
-            margin: 20px 0;
+            margin: 40px 0;
             display: flex;
             justify-content: center;
             gap: 20px;
@@ -76,6 +101,15 @@
         .social-links a:hover {
             color: #FFD700;
         }
+
+        /* Footer styling */
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #f8f8f8;
+            margin-top: 40px;
+        }
+
     </style>
 </head>
 
@@ -98,15 +132,22 @@
     </div>
 
     <h2>Contactez-nous</h2>
-    <div class="contact-info">
-        <h3>Email :</h3>
-        <p><a href="mailto:bawana@gatech.edu">bawana@gatech.edu</a></p>
-
-        <h3>Téléphone :</h3>
-        <p>+1 813 327 2419 / 900-15-22</p>
-
-        <h3>WhatsApp :</h3>
-        <p><a href="https://wa.me/18133272419">+1 813 327 2419</a></p>
+    
+    <!-- Contact section with two-column layout -->
+    <div class="contact-container">
+        <div class="contact-info">
+            <div class="contact-column">
+                <h3>Email</h3>
+                <p><a href="mailto:bawana@gatech.edu">bawana@gatech.edu</a></p>
+                
+                <h3>WhatsApp</h3>
+                <p><a href="https://wa.me/18133272419">+1 813 327 2419</a></p>
+            </div>
+            <div class="contact-column">
+                <h3>Téléphone</h3>
+                <p>+1 813 327 2419 / 900-15-22</p>
+            </div>
+        </div>
     </div>
 
     <h3>Réseaux Sociaux :</h3>
