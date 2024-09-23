@@ -6,21 +6,19 @@
     <link rel="shortcut icon" type="image/png" href="assets/favicon.png"/>
     <link rel="stylesheet" type="text/css" media="all" href="assets/main.css"/>
     <meta name="description" content="Tests de Langue - Etudes et Immigration aux USA">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="resource-type" content="document">
     <meta name="distribution" content="global">
     <meta name="KeyWords" content="Tests de Langue, TOEFL, IELTS, TOEIC, Duolingo, USA">
     <title>Tests de Langue - Etudes et Immigration aux USA</title>
 
     <style>
-        /* Add custom font size adjustments */
-        .title1 {
-            font-size: 55px; /* Adjust the size to your needs */
-        }
-        .title2 {
-            font-size: 55px; /* Adjust the size to your needs */
+        /* Base font size adjustments */
+        .title1, .title2 {
+            font-size: 3em;
         }
         .year {
-            font-size: 45px; /* Adjust the size to your needs */
+            font-size: 2.5em;
         }
 
         /* Styling for the navigation */
@@ -30,28 +28,92 @@
         }
 
         .navigation a {
-            font-size: 18px; /* Adjust the font size */
+            font-size: 1.2em;
             text-decoration: none;
-            padding: 10px 20px; /* Add padding to improve spacing */
+            padding: 10px 20px;
             display: inline-block;
-            color: #333; /* Change the color if needed */
+            color: #333;
         }
 
         .navigation a:hover {
-            color: #FFD700; /* Change the hover color */
+            color: #FFD700;
         }
 
-        /* Ensure the table is responsive and centers the content */
+        /* Center navigation links */
         .navigation {
             margin: 0 auto;
             display: flex;
             justify-content: center;
-            gap: 20px; /* Adjust the spacing between links */
+            gap: 20px;
         }
 
         /* Custom size for the image */
         .small-image {
-            width: 1250px; /* Adjust the size as needed */
+            width: 100%; /* Responsive image size */
+            max-width: 1250px;
+        }
+
+        /* Responsive adjustments for content */
+        .content {
+            margin: 40px 20px;
+            font-size: 1.1em;
+            line-height: 1.6;
+        }
+
+        h2, h3 {
+            margin-bottom: 15px;
+        }
+
+        ul {
+            margin-left: 20px;
+        }
+
+        /* Responsive adjustments for mobile screens */
+        @media (max-width: 768px) {
+            .title1, .title2 {
+                font-size: 2.5em;
+            }
+            .year {
+                font-size: 2em;
+            }
+
+            .navigation a {
+                font-size: 1em;
+                padding: 5px 10px;
+            }
+
+            .content {
+                margin: 20px 10px;
+                font-size: 1em;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .title1, .title2 {
+                font-size: 2em;
+            }
+            .year {
+                font-size: 1.5em;
+            }
+
+            .navigation {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .navigation a {
+                font-size: 1em;
+                padding: 10px 5px;
+            }
+
+            .content {
+                margin: 15px 5px;
+                font-size: 0.9em;
+            }
+
+            ul {
+                margin-left: 15px;
+            }
         }
     </style>
 </head>
@@ -74,62 +136,64 @@
         <a title="Contact" href="contact.html">CONTACT</a>
     </div>
 
-    <h2>TOEFL, TOEIC, IELTS, Duolingo : Quel test d’anglais choisir ?</h2>
-    <p>
-        Face à une multitude de tests d’anglais disponibles, choisir le bon examen peut être difficile. Que vous envisagiez des études, un stage, ou un emploi à l’étranger, choisir le test adapté est essentiel. Chaque test a ses particularités et vise des objectifs spécifiques.
-    </p>
-    <p>
-        Dans cet article, nous vous aidons à comprendre les différences entre les principaux tests d’anglais (TOEFL, IELTS, TOEIC, et Duolingo) afin de faire un choix éclairé.
-    </p>
+    <div class="content">
+        <h2>TOEFL, TOEIC, IELTS, Duolingo : Quel test d’anglais choisir ?</h2>
+        <p>
+            Face à une multitude de tests d’anglais disponibles, choisir le bon examen peut être difficile. Que vous envisagiez des études, un stage, ou un emploi à l’étranger, choisir le test adapté est essentiel. Chaque test a ses particularités et vise des objectifs spécifiques.
+        </p>
+        <p>
+            Dans cet article, nous vous aidons à comprendre les différences entre les principaux tests d’anglais (TOEFL, IELTS, TOEIC, et Duolingo) afin de faire un choix éclairé.
+        </p>
 
-    <h3>IELTS (International English Language Testing System)</h3>
-    <p>
-        L’<b>IELTS</b> est reconnu par plus de 140 pays et destiné à évaluer les compétences linguistiques pour ceux qui souhaitent étudier ou travailler dans un pays anglophone. Il existe deux versions :
-    </p>
-    <ul>
-        <li><b>IELTS Academic</b> : Pour les études supérieures.</li>
-        <li><b>IELTS General Training</b> : Pour l’immigration ou le travail à l'étranger.</li>
-    </ul>
-    <p>
-        Le coût de l'IELTS varie de $200 à $350 selon la région. Il est valide pendant 2 ans.
-    </p>
+        <h3>IELTS (International English Language Testing System)</h3>
+        <p>
+            L’<b>IELTS</b> est reconnu par plus de 140 pays et destiné à évaluer les compétences linguistiques pour ceux qui souhaitent étudier ou travailler dans un pays anglophone. Il existe deux versions :
+        </p>
+        <ul>
+            <li><b>IELTS Academic</b> : Pour les études supérieures.</li>
+            <li><b>IELTS General Training</b> : Pour l’immigration ou le travail à l'étranger.</li>
+        </ul>
+        <p>
+            Le coût de l'IELTS varie de $200 à $350 selon la région. Il est valide pendant 2 ans.
+        </p>
 
-    <h3>TOEFL (Test of English as a Foreign Language)</h3>
-    <p>
-        Le <b>TOEFL</b> est principalement utilisé par les universités et les entreprises pour évaluer les compétences en anglais dans un cadre académique. Le test le plus courant est le <b>TOEFL iBT</b>, administré en ligne.
-    </p>
-    <ul>
-        <li><b>Durée</b> : Environ 3 heures 30 minutes.</li>
-        <li><b>Prix</b> : De $140 à $220.</li>
-        <li><b>Validité</b> : 2 ans.</li>
-    </ul>
+        <h3>TOEFL (Test of English as a Foreign Language)</h3>
+        <p>
+            Le <b>TOEFL</b> est principalement utilisé par les universités et les entreprises pour évaluer les compétences en anglais dans un cadre académique. Le test le plus courant est le <b>TOEFL iBT</b>, administré en ligne.
+        </p>
+        <ul>
+            <li><b>Durée</b> : Environ 3 heures 30 minutes.</li>
+            <li><b>Prix</b> : De $140 à $220.</li>
+            <li><b>Validité</b> : 2 ans.</li>
+        </ul>
 
-    <h3>TOEIC (Test of English for International Communication)</h3>
-    <p>
-        Le <b>TOEIC</b> évalue les compétences en anglais dans un contexte professionnel international. Il est souvent utilisé par les entreprises pour recruter des employés ayant des compétences linguistiques avancées.
-    </p>
-    <ul>
-        <li><b>TOEIC Listening & Reading</b> : Test de 2 heures pour évaluer la compréhension orale et écrite.</li>
-        <li><b>TOEIC Speaking & Writing</b> : Test de 75 minutes pour évaluer la capacité à communiquer en milieu professionnel.</li>
-    </ul>
-    <p>
-        Le coût du TOEIC varie de $85 à $150 selon la région.
-    </p>
+        <h3>TOEIC (Test of English for International Communication)</h3>
+        <p>
+            Le <b>TOEIC</b> évalue les compétences en anglais dans un contexte professionnel international. Il est souvent utilisé par les entreprises pour recruter des employés ayant des compétences linguistiques avancées.
+        </p>
+        <ul>
+            <li><b>TOEIC Listening & Reading</b> : Test de 2 heures pour évaluer la compréhension orale et écrite.</li>
+            <li><b>TOEIC Speaking & Writing</b> : Test de 75 minutes pour évaluer la capacité à communiquer en milieu professionnel.</li>
+        </ul>
+        <p>
+            Le coût du TOEIC varie de $85 à $150 selon la région.
+        </p>
 
-    <h3>Duolingo English Test</h3>
-    <p>
-        Le <b>Duolingo English Test</b> est une alternative en ligne rapide et pratique aux tests traditionnels. Il est disponible à tout moment et n’exige pas de se rendre dans un centre d'examen.
-    </p>
-    <ul>
-        <li><b>Prix</b> : $49.</li>
-        <li><b>Validité</b> : 2 ans.</li>
-        <li><b>Résultats</b> : Sous 48 heures.</li>
-    </ul>
+        <h3>Duolingo English Test</h3>
+        <p>
+            Le <b>Duolingo English Test</b> est une alternative en ligne rapide et pratique aux tests traditionnels. Il est disponible à tout moment et n’exige pas de se rendre dans un centre d'examen.
+        </p>
+        <ul>
+            <li><b>Prix</b> : $49.</li>
+            <li><b>Validité</b> : 2 ans.</li>
+            <li><b>Résultats</b> : Sous 48 heures.</li>
+        </ul>
 
-    <h3>Comment EI-USA peut vous aider ?</h3>
-    <p>
-        Chez <b>EI-USA</b>, nous vous accompagnons dans la sélection du test le plus approprié à vos besoins académiques ou professionnels. Nous vous aidons à vous inscrire, à vous préparer, et à réussir les tests de langue nécessaires pour vos études ou votre carrière à l'étranger.
-    </p>
+        <h3>Comment EI-USA peut vous aider ?</h3>
+        <p>
+            Chez <b>EI-USA</b>, nous vous accompagnons dans la sélection du test le plus approprié à vos besoins académiques ou professionnels. Nous vous aidons à vous inscrire, à vous préparer, et à réussir les tests de langue nécessaires pour vos études ou votre carrière à l'étranger.
+        </p>
+    </div>
 
     <footer>
         &copy; 2024 EI-USA &nbsp;|&nbsp; Designed by EI-USA Web Team
