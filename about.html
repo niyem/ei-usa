@@ -2,12 +2,90 @@
 <html lang='fr'>
 
 <head>
+    <base href=".">
     <meta charset="UTF-8">
     <meta name="description" content="Qui sommes-nous - Etudes et Immigration aux USA">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="resource-type" content="document">
+    <meta name="distribution" content="global">
+    <meta name="KeyWords" content="Etudes, Immigration, USA, Étudiants Internationaux, NIW, National Interest Waiver">
     <title>Qui Sommes-nous !</title>
     <link rel="stylesheet" type="text/css" href="assets/main.css">
+
     <style>
+        /* Font size adjustments */
+        .title1 {
+            font-size: 55px;
+        }
+
+        .title2 {
+            font-size: 55px;
+        }
+
+        .year {
+            font-size: 45px;
+        }
+
+        /* Styling for the navigation */
+        .navigation {
+            text-align: center;
+            padding: 10px 20px;
+        }
+
+        .navigation a {
+            font-size: 18px;
+            text-decoration: none;
+            padding: 10px 20px;
+            display: inline-block;
+            color: #333;
+        }
+
+        .navigation a:hover {
+            color: #FFD700;
+        }
+
+        .navigation {
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        /* Image styling */
+        .small-image {
+            width: 1250px;
+        }
+
+        /* Banner styling */
+        .banner {
+            position: relative;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .top-left {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            color: white;
+        }
+
+        .title1 {
+            font-size: 55px;
+            color: #fff;
+        }
+
+        .title2 {
+            font-size: 55px;
+            color: #FFD700;
+        }
+
+        .year {
+            font-size: 45px;
+            color: #FFD700;
+        }
+
+        /* Content styles */
         body {
             font-family: Arial, sans-serif;
             line-height: 1.6;
@@ -15,7 +93,6 @@
             padding: 0;
         }
 
-        /* Global styles */
         .container {
             width: 90%;
             margin: auto;
@@ -72,40 +149,6 @@
             background-color: #FFD700;
         }
 
-        /* Banner styling */
-        .banner {
-            position: relative;
-            text-align: center;
-            margin-bottom: 20px;
-        }
-
-        .small-image {
-            width: 100%;
-            height: auto;
-        }
-
-        .top-left {
-            position: absolute;
-            top: 20px;
-            left: 20px;
-            color: white;
-        }
-
-        .title1 {
-            font-size: 55px;
-            color: #fff;
-        }
-
-        .title2 {
-            font-size: 55px;
-            color: #FFD700;
-        }
-
-        .year {
-            font-size: 45px;
-            color: #FFD700;
-        }
-
         /* Footer styles */
         footer {
             text-align: center;
@@ -127,6 +170,16 @@
         </div>
     </div>
 
+    <!-- Navigation section -->
+    <div class="navigation">
+        <a class="current" title="Home Page" href=".">ACCUEIL</a>
+         <a title="About" href="about">A PROPOS</a>
+        <a title="A propos" href="apropos.html">RESOURCES</a>
+        <a title="Nos Services" href="services.html">NOS SERVICES</a> 
+        <a title="Tests de Langue" href="tests.html">TESTS DE LANGUE</a>
+        <a title="Contact" href="contact.html">CONTACT</a>
+    </div>
+
     <header>
         <div class="container">
             <h1>Qui Sommes-nous</h1>
@@ -138,7 +191,7 @@
         <div class="section">
             <h2>Etudier et Immigrer aux USA (EI-USA)</h2>
             <p>
-                Créé en 2021,  EI-USA est un cabinet spécialisé dans le conseil en stratégie de formation et d’orientation des étudiants dans leur projet d’études aux USA. Plaçant l’avenir des étudiants au cœur de sa mission, notre cabinet s’est engagé à satisfaire au mieux leurs inquiétudes, boostant ainsi leur carrière pour lui donner une dimension internationale.
+                Créé en 2021, EI-USA est un cabinet spécialisé dans le conseil en stratégie de formation et d’orientation des étudiants dans leur projet d’études aux USA. Plaçant l’avenir des étudiants au cœur de sa mission, notre cabinet s’est engagé à satisfaire au mieux leurs inquiétudes, boostant ainsi leur carrière pour lui donner une dimension internationale.
             </p>
             <p>
                 Depuis 2024, nous avons également intégré l'immigration par le biais de NIW-EB2, qui permet aux détenteurs d'un master ou d'un doctorat en science ou ingénierie, ou encore d'une licence suivie de 5 années d'expérience professionnelle, d'immigrer aux USA.
@@ -159,7 +212,7 @@
                 </p>
             </div>
             <div class="director-image">
-                <img src="director.png" alt="Photo du Directeur Niyem Bawana">
+                <img src="assets/director.png" alt="Photo du Directeur Niyem Bawana">
             </div>
         </div>
 
