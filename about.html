@@ -12,44 +12,189 @@
     <title>Qui Sommes-nous !</title>
     <link rel="stylesheet" type="text/css" href="assets/main.css">
 
+    <style>
+        /* Font size adjustments */
+        .title1 {
+            font-size: 55px;
+            color: #8B0000;
+        }
 
+        .title2 {
+            font-size: 55px;
+            color: #4682B4;
+        }
+
+        .year {
+            font-size: 45px;
+            color: #2E8B57;
+        }
+
+        /* Updated navigation styling */
+        .navigation {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+            padding: 10px 0;
+            background-color: #fff;
+            text-align: center;
+        }
+
+        .navigation a {
+            font-size: 18px;
+            text-decoration: none;
+            padding: 10px 15px;
+            display: inline-block;
+            color: #333;
+            white-space: nowrap;
+        }
+
+        .navigation a:hover {
+            color: #FFD700;
+        }
+
+        /* Custom size for the image */
+        .small-image {
+            width: 1250px;
+            height: auto;
+        }
+
+        /* Banner styling */
+        .banner {
+            position: relative;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .top-left {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            color: white;
+        }
+
+        .title1 {
+            font-size: 55px;
+            color: #8B0000;
+        }
+
+        .title2 {
+            font-size: 55px;
+            color: #4682B4;
+        }
+
+        .year {
+            font-size: 45px;
+            color: #2E8B57;
+        }
+
+        /* Content styles */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 90%;
+            margin: auto;
+            padding: 20px;
+            overflow: hidden;
+        }
+
+        h1, h2, h3 {
+            text-align: center;
+            color: #333;
+        }
+
+        .section {
+            background-color: #f4f4f4;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+            box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .section h2 {
+            color: #1E90FF;
+        }
+
+        .section p {
+            color: #555;
+            text-align: left;
+        }
+
+        /* Adjust the director section */
+        .director-section {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin: 20px 0;
+        }
+
+        .director-text {
+            width: 65%;
+        }
+
+        .director-image {
+            width: 30%;
+            text-align: center;
+        }
+
+        .director-image img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .director-title {
+            margin-top: 10px;
+            font-size: 18px;
+            color: #333;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        /* Section styling */
+        .section-values {
+            background-color: #87CEEB;
+        }
+
+        .section-vision {
+            background-color: #FFD700;
+        }
+
+        /* Footer styles */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+            margin-top: 30px;
+        }
+    </style>
 </head>
-<style>
-    /* Updated navigation styling */
-    .navigation {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 30px; /* Add more space between items */
-        padding: 10px 0;
-        background-color: #fff; /* Set a background color if needed */
-        text-align: center;
-    }
 
-    .navigation a {
-        font-size: 18px;
-        text-decoration: none;
-        padding: 10px 15px;
-        display: inline-block;
-        color: #333;
-        white-space: nowrap; /* Ensure that the text stays on one line */
-    }
+<body>
 
-    .navigation a:hover {
-        color: #FFD700;
-    }
-</style>
+    <!-- Banner section -->
+    <div class="banner">
+        <img src="assets/EI-USA1.png" alt="Etudes et Immigration aux USA" class="small-image">
+        <div class="top-left">
+            <span class="title1">Etudes et </span><span class="title2">Immigration</span> <span class="year">aux USA</span>
+        </div>
+    </div>
 
-<!-- Updated navigation section -->
-<div class="navigation">
-    <a title="Home Page" href=".">ACCUEIL</a>
-    <a title="About" href="about">A PROPOS</a>
-    <a title="Resources" href="resources.html">RESOURCES</a>
-    <a title="Services" href="services.html">NOS SERVICES</a> 
-    <a title="Language Tests" href="tests.html">TESTS DE LANGUE</a>
-    <a title="Contact" href="contact.html">CONTACT</a>
-</div>
-
+    <!-- Updated navigation section -->
+    <div class="navigation">
+        <a title="Home Page" href=".">ACCUEIL</a>
+        <a title="About" href="about">A PROPOS</a>
+        <a title="Resources" href="resources.html">RESOURCES</a>
+        <a title="Services" href="services.html">NOS SERVICES</a> 
+        <a title="Language Tests" href="tests.html">TESTS DE LANGUE</a>
+        <a title="Contact" href="contact.html">CONTACT</a>
+    </div>
 
     <header>
         <div class="container">
@@ -73,7 +218,7 @@
             <div class="director-text">
                 <h2>Mot du Directeur</h2>
                 <p>
-                    "Partir étudier à l’étranger, un rêve pour ceux qui s’y préparent, une expérience riche pour ceux qui en reviennent et surtout, un grand atout sur le CV très apprécié par les recruteurs. Aujourd’hui, de nombreux africains d'origine francophone partent étudier à l’étranger, mais peu savent qu'il est possible d'obtenir une admission aux USA.
+                    "Partir étudier à l’étranger, un rêve pour ceux qui s’y préparent, une expérience riche pour ceux qui en reviennent et surtout, un grand atout sur le CV très apprécié par les recruteurs. Aujourd’hui, de nombreux africains d'origine francophone partent étudier à l’étranger, mais peu savent qu'il est possible d'obtenir une admission aux USA. 
                 </p>
                 <p>
                     Le processus d'immigration NIW est très peu connu du monde francophone. En général, les gens connaissent la DV-lottery, qui repose sur le hasard. Cependant, avec votre formation, vous pouvez facilement immigrer aux USA sans vous fier uniquement à la chance.
@@ -84,6 +229,7 @@
             </div>
             <div class="director-image">
                 <img src="director.png" alt="Photo du Directeur Niyem Bawana">
+                <div class="director-title">Le Directeur: Ingenieur Niyem Bawana</div>
             </div>
         </div>
 
@@ -97,7 +243,7 @@
         <div class="section section-vision">
             <h2>Notre Vision</h2>
             <p>
-                Notre vision est de devenir un partenaire stratégique pour nos clients dans leurs projets d’études et d'immigration aux USA, en leur offrant des services à forte valeur ajoutée, alliant innovation et qualité. Nous entendons être les pionniers en Afrique francophone de l’orientation scolaire vers les USA, en apportant des solutions efficaces aux préoccupations des étudiants et de leurs parents.
+                Notre vision est de devenir un partenaire stratégique pour nos clients dans leurs projets d’études et d'immigration aux USA, en leur offrant des services à forte valeur ajoutée, alliant innovation et qualité. Nous entendons être les pionniers en Afrique francophone de l’orientation scolaire vers les USA, en apportant des solutions efficaces aux préoccupations des étudiants et de leurs parents. 
             </p>
             <p>
                 Nous nous engageons également à vous aider à réaliser le rêve américain via le programme NIW, permettant aux professionnels qualifiés d'immigrer. Nous rêvons avec vous, tout en œuvrant pour aider la population francophone aux USA à améliorer sa qualité de vie par l'éducation et l'intégration.
@@ -111,5 +257,4 @@
     </footer>
 
 </body>
-
 </html>
