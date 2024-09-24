@@ -126,15 +126,15 @@
         /* Director section adjustments for responsiveness */
         .director-section {
             display: flex;
-            flex-direction: column;
+            flex-direction: row;
             align-items: center;
             justify-content: center;
-            text-align: center;
+            gap: 20px;
         }
 
         .director-text {
-            width: 100%;
-            margin-bottom: 20px;
+            width: 60%;
+            text-align: center;
         }
 
         .director-image {
@@ -171,6 +171,12 @@
             }
             .year {
                 font-size: 30px;
+            }
+            .director-section {
+                flex-direction: column;
+            }
+            .director-text {
+                width: 100%;
             }
             .director-image {
                 width: 150px;
