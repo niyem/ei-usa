@@ -51,9 +51,9 @@
             gap: 20px;
         }
 
-        /* Image styling */
+        /* Custom size for the image */
         .small-image {
-            width: 1250px;
+            width: 100%;
             height: auto;
         }
 
@@ -123,7 +123,7 @@
             text-align: center;
         }
 
-        /* Adjust the director section */
+        /* Director section adjustments for responsiveness */
         .director-section {
             display: flex;
             flex-direction: column;
@@ -138,11 +138,11 @@
         }
 
         .director-image {
-            width: 200px; /* Adjust image width */
+            width: 200px;
         }
 
         .director-image img {
-            width: 100%; /* Ensure the image fits properly */
+            width: 100%;
             border-radius: 8px;
         }
 
@@ -163,6 +163,29 @@
             color: white;
             margin-top: 30px;
         }
+
+        /* Media queries for responsiveness */
+        @media screen and (max-width: 768px) {
+            .title1, .title2 {
+                font-size: 40px;
+            }
+            .year {
+                font-size: 30px;
+            }
+            .director-image {
+                width: 150px;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            .navigation {
+                flex-direction: column;
+                gap: 10px;
+            }
+            .small-image {
+                width: 100%;
+            }
+        }
     </style>
 </head>
 
@@ -181,7 +204,7 @@
         <a class="current" title="Home Page" href=".">ACCUEIL</a>
         <a title="About" href="about">A PROPOS</a>
         <a title="A propos" href="apropos.html">RESOURCES</a>
-        <a title="Nos Services" href="services.html">NOS SERVICES</a> 
+        <a title="Nos Services" href="services.html">NOS SERVICES</a>
         <a title="Tests de Langue" href="tests.html">TESTS DE LANGUE</a>
         <a title="Contact" href="contact.html">CONTACT</a>
     </div>
@@ -193,52 +216,34 @@
     </header>
 
     <main class="container">
-
         <div class="section">
             <h2>Etudier et Immigrer aux USA (EI-USA)</h2>
-            <p>
-                Créé en 2021, EI-USA est un cabinet spécialisé dans le conseil en stratégie de formation et d’orientation des étudiants dans leur projet d’études aux USA. Plaçant l’avenir des étudiants au cœur de sa mission, notre cabinet s’est engagé à satisfaire au mieux leurs inquiétudes, boostant ainsi leur carrière pour lui donner une dimension internationale.
-            </p>
-            <p>
-                Depuis 2024, nous avons également intégré l'immigration par le biais de NIW-EB2, qui permet aux détenteurs d'un master ou d'un doctorat en science ou ingénierie, ou encore d'une licence suivie de 5 années d'expérience professionnelle, d'immigrer aux USA.
-            </p>
+            <p>Créé en 2021, EI-USA est un cabinet spécialisé dans le conseil en stratégie de formation et d’orientation des étudiants dans leur projet d’études aux USA. Plaçant l’avenir des étudiants au cœur de sa mission, notre cabinet s’est engagé à satisfaire au mieux leurs inquiétudes, boostant ainsi leur carrière pour lui donner une dimension internationale.</p>
+            <p>Depuis 2024, nous avons également intégré l'immigration par le biais de NIW-EB2, qui permet aux détenteurs d'un master ou d'un doctorat en science ou ingénierie, ou encore d'une licence suivie de 5 années d'expérience professionnelle, d'immigrer aux USA.</p>
         </div>
 
         <div class="section director-section">
             <div class="director-text">
                 <h2>Mot du Directeur</h2>
-                <p>
-                    "Partir étudier à l’étranger, un rêve pour ceux qui s’y préparent, une expérience riche pour ceux qui en reviennent et surtout, un grand atout sur le CV très apprécié par les recruteurs. Aujourd’hui, de nombreux africains d'origine francophone partent étudier à l’étranger, mais peu savent qu'il est possible d'obtenir une admission aux USA. 
-                </p>
-                <p>
-                    Le processus d'immigration NIW est très peu connu du monde francophone. En général, les gens connaissent la DV-lottery, qui repose sur le hasard. Cependant, avec votre formation, vous pouvez facilement immigrer aux USA sans vous fier uniquement à la chance.
-                </p>
-                <p>
-                    Chez EI-USA, nous vous offrons des services de qualité qui vous permettent de gagner du temps, d'améliorer votre professionnalisme et de renforcer votre confiance. Nous rêvons avec vous, vous orientons, et ensemble nous remportons le pari de la fiabilité et de l’implication."
-                </p>
+                <p>"Partir étudier à l’étranger, un rêve pour ceux qui s’y préparent, une expérience riche pour ceux qui en reviennent et surtout, un grand atout sur le CV très apprécié par les recruteurs. Aujourd’hui, de nombreux africains d'origine francophone partent étudier à l’étranger, mais peu savent qu'il est possible d'obtenir une admission aux USA.</p>
+                <p>Le processus d'immigration NIW est très peu connu du monde francophone. En général, les gens connaissent la DV-lottery, qui repose sur le hasard. Cependant, avec votre formation, vous pouvez facilement immigrer aux USA sans vous fier uniquement à la chance.</p>
+                <p>Chez EI-USA, nous vous offrons des services de qualité qui vous permettent de gagner du temps, d'améliorer votre professionnalisme et de renforcer votre confiance. Nous rêvons avec vous, vous orientons, et ensemble nous remportons le pari de la fiabilité et de l’implication."</p>
             </div>
             <div class="director-image">
-                <img src="director.png" alt="Photo du Directeur Niyem Bawana">
+                <img src="assets/director.png" alt="Photo du Directeur Niyem Bawana">
             </div>
         </div>
 
         <div class="section section-values">
             <h2>Nos Valeurs</h2>
-            <p>
-                Nos valeurs extériorisent notre identité et nous distinguent. Elles se manifestent au travers de nos actions quotidiennes, structurant notre approche professionnelle et façonnant nos relations avec toutes nos parties prenantes. Nos valeurs – Respect, Partage, Fiabilité et Satisfaction client – sont les fondations solides qui sous-tendent notre travail avec chaque client.
-            </p>
+            <p>Nos valeurs extériorisent notre identité et nous distinguent. Elles se manifestent au travers de nos actions quotidiennes, structurant notre approche professionnelle et façonnant nos relations avec toutes nos parties prenantes. Nos valeurs – Respect, Partage, Fiabilité et Satisfaction client – sont les fondations solides qui sous-tendent notre travail avec chaque client.</p>
         </div>
 
         <div class="section section-vision">
             <h2>Notre Vision</h2>
-            <p>
-                Notre vision est de devenir un partenaire stratégique pour nos clients dans leurs projets d’études et d'immigration aux USA, en leur offrant des services à forte valeur ajoutée, alliant innovation et qualité. Nous entendons être les pionniers en Afrique francophone de l’orientation scolaire vers les USA, en apportant des solutions efficaces aux préoccupations des étudiants et de leurs parents. 
-            </p>
-            <p>
-                Nous nous engageons également à vous aider à réaliser le rêve américain via le programme NIW, permettant aux professionnels qualifiés d'immigrer. Nous rêvons avec vous, tout en œuvrant pour aider la population francophone aux USA à améliorer sa qualité de vie par l'éducation et l'intégration.
-            </p>
+            <p>Notre vision est de devenir un partenaire stratégique pour nos clients dans leurs projets d’études et d'immigration aux USA, en leur offrant des services à forte valeur ajoutée, alliant innovation et qualité. Nous entendons être les pionniers en Afrique francophone de l’orientation scolaire vers les USA, en apportant des solutions efficaces aux préoccupations des étudiants et de leurs parents.</p>
+            <p>Nous nous engageons également à vous aider à réaliser le rêve américain via le programme NIW, permettant aux professionnels qualifiés d'immigrer. Nous rêvons avec vous, tout en œuvrant pour aider la population francophone aux USA à améliorer sa qualité de vie par l'éducation et l'intégration.</p>
         </div>
-
     </main>
 
     <footer>
