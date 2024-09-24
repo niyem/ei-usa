@@ -9,7 +9,7 @@
     <meta name="resource-type" content="document">
     <meta name="distribution" content="global">
     <meta name="KeyWords" content="Etudes, Immigration, USA, Étudiants Internationaux, NIW, National Interest Waiver">
-    
+    <title>Qui Sommes-nous !</title>
     <link rel="stylesheet" type="text/css" href="assets/main.css">
 
     <style>
@@ -53,7 +53,8 @@
 
         /* Image styling */
         .small-image {
-            width: 1250px;
+            width: 100%; /* Ensure the image scales with the screen */
+            max-width: 1250px; /* Add max width for larger screens */
             height: auto;
         }
 
@@ -73,39 +74,32 @@
 
         .title1 {
             font-size: 55px;
-            color: #A52A2A;
+            color: #ff0000; /* Changed to red */
         }
 
         .title2 {
             font-size: 55px;
-            color: #4682B4;
+            color: #1E90FF; /* Changed to blue */
         }
 
         .year {
             font-size: 45px;
-            color: #696969;
+            color: #333; /* Changed to gray */
         }
 
-        /* Body and container adjustments for centering */
+        /* Content styles */
         body {
             font-family: Arial, sans-serif;
             line-height: 1.6;
             margin: 0;
             padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            background-color: #f4f4f4;
         }
 
         .container {
-            width: 90%;
-            max-width: 1200px;
+            width: 100%;
+            max-width: 1250px;
             margin: 0 auto;
             padding: 20px;
-            background-color: white;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
         }
 
         h1, h2, h3 {
@@ -127,27 +121,31 @@
 
         .section p {
             color: #555;
-            text-align: center;
+            text-align: justify; /* Added justify for better text alignment */
         }
 
         /* Adjust the director section */
         .director-section {
             display: flex;
-            align-items: center;
-            justify-content: center;
+            flex-direction: row;
+            align-items: flex-start;
+            justify-content: space-between;
             gap: 20px;
+            flex-wrap: wrap; /* Ensure it wraps on smaller screens */
         }
 
         .director-text {
-            flex: 1;
+            width: 65%;
         }
 
         .director-image {
-            flex: 0 0 250px;
+            width: 30%;
+            text-align: right;
         }
 
         .director-image img {
             width: 100%;
+            max-width: 200px; /* Ensure the image fits properly */
             border-radius: 8px;
         }
 
@@ -169,15 +167,26 @@
             margin-top: 30px;
         }
 
-        /* Responsive Design */
-        @media screen and (max-width: 768px) {
+        /* Media query for responsiveness */
+        @media (max-width: 768px) {
             .director-section {
                 flex-direction: column;
                 align-items: center;
             }
 
+            .director-text {
+                width: 100%;
+                text-align: center;
+            }
+
             .director-image {
-                margin-bottom: 20px;
+                width: 100%;
+                text-align: center;
+            }
+
+            .director-image img {
+                margin: 0 auto;
+                max-width: 150px;
             }
         }
     </style>
@@ -198,7 +207,7 @@
         <a class="current" title="Home Page" href=".">ACCUEIL</a>
         <a title="About" href="about">A PROPOS</a>
         <a title="A propos" href="apropos.html">RESOURCES</a>
-        <a title="Nos Services" href="services.html">NOS SERVICES</a> 
+        <a title="Nos Services" href="services.html">NOS SERVICES</a>
         <a title="Tests de Langue" href="tests.html">TESTS DE LANGUE</a>
         <a title="Contact" href="contact.html">CONTACT</a>
     </div>
@@ -225,7 +234,7 @@
             <div class="director-text">
                 <h2>Mot du Directeur</h2>
                 <p>
-                    "Partir étudier à l’étranger, un rêve pour ceux qui s’y préparent, une expérience riche pour ceux qui en reviennent et surtout, un grand atout sur le CV très apprécié par les recruteurs. Aujourd’hui, de nombreux africains d'origine francophone partent étudier à l’étranger, mais peu savent qu'il est possible d'obtenir une admission aux USA. 
+                    "Partir étudier à l’étranger, un rêve pour ceux qui s’y préparent, une expérience riche pour ceux qui en reviennent et surtout, un grand atout sur le CV très apprécié par les recruteurs. Aujourd’hui, de nombreux africains d'origine francophone partent étudier à l’étranger, mais peu savent qu'il est possible d'obtenir une admission aux USA.
                 </p>
                 <p>
                     Le processus d'immigration NIW est très peu connu du monde francophone. En général, les gens connaissent la DV-lottery, qui repose sur le hasard. Cependant, avec votre formation, vous pouvez facilement immigrer aux USA sans vous fier uniquement à la chance.
@@ -249,7 +258,7 @@
         <div class="section section-vision">
             <h2>Notre Vision</h2>
             <p>
-                Notre vision est de devenir un partenaire stratégique pour nos clients dans leurs projets d’études et d'immigration aux USA, en leur offrant des services à forte valeur ajoutée, alliant innovation et qualité. Nous entendons être les pionniers en Afrique francophone de l’orientation scolaire vers les USA, en apportant des solutions efficaces aux préoccupations des étudiants et de leurs parents. 
+                Notre vision est de devenir un partenaire stratégique pour nos clients dans leurs projets d’études et d'immigration aux USA, en leur offrant des services à forte valeur ajoutée, alliant innovation et qualité. Nous entendons être les pionniers en Afrique francophone de l’orientation scolaire vers les USA, en apportant des solutions efficaces aux préoccupations des étudiants et de leurs parents.
             </p>
             <p>
                 Nous nous engageons également à vous aider à réaliser le rêve américain via le programme NIW, permettant aux professionnels qualifiés d'immigrer. Nous rêvons avec vous, tout en œuvrant pour aider la population francophone aux USA à améliorer sa qualité de vie par l'éducation et l'intégration.
