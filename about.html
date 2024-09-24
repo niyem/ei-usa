@@ -97,6 +97,7 @@
         .container {
             width: 90%;
             margin: auto;
+            padding: 20px; /* Add padding to ensure text doesn't touch borders */
             overflow: hidden;
         }
 
@@ -121,10 +122,12 @@
             color: #555;
         }
 
+        /* Adjust the director section */
         .director-section {
             display: flex;
-            align-items: center;
+            align-items: flex-start;
             justify-content: space-between;
+            gap: 20px;
         }
 
         .director-text {
@@ -133,11 +136,10 @@
 
         .director-image {
             width: 30%;
-            text-align: right;
         }
 
         .director-image img {
-            max-width: 100%;
+            width: 100%; /* Ensure the image fits properly */
             border-radius: 8px;
         }
 
