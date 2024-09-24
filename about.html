@@ -3,27 +3,27 @@
 
 <head>
     <base href=".">
-    <link rel="shortcut icon" type="image/png" href="assets/favicon.png"/>
-    <link rel="stylesheet" type="text/css" media="all" href="assets/main.css"/>
-    <meta name="description" content="Qui Sommes-nous - Etudes et Immigration aux USA">
+    <meta charset="UTF-8">
+    <meta name="description" content="Qui sommes-nous - Etudes et Immigration aux USA">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="resource-type" content="document">
     <meta name="distribution" content="global">
     <meta name="KeyWords" content="Etudes, Immigration, USA, Étudiants Internationaux, NIW, National Interest Waiver">
     <title>Qui Sommes-nous !</title>
+    <link rel="stylesheet" type="text/css" href="assets/main.css">
 
     <style>
-        /* Add custom font size adjustments */
+        /* Font size adjustments */
         .title1 {
-            font-size: 55px; /* Adjust the size to your needs */
-            color: #8B0000; /* Red for "Etudes et" */
+            font-size: 55px;
         }
+
         .title2 {
-            font-size: 55px; /* Adjust the size to your needs */
-            color: #4682B4; /* Blue for "Immigration" */
+            font-size: 55px;
         }
+
         .year {
-            font-size: 45px; /* Adjust the size to your needs */
-            color: #696969; /* Gray for "aux USA" */
+            font-size: 45px;
         }
 
         /* Styling for the navigation */
@@ -33,28 +33,28 @@
         }
 
         .navigation a {
-            font-size: 18px; /* Adjust the font size */
+            font-size: 18px;
             text-decoration: none;
-            padding: 10px 20px; /* Add padding to improve spacing */
+            padding: 10px 20px;
             display: inline-block;
-            color: #333; /* Change the color if needed */
+            color: #333;
         }
 
         .navigation a:hover {
-            color: #FFD700; /* Change the hover color */
+            color: #FFD700;
         }
 
-        /* Ensure the navigation is responsive and centers the content */
         .navigation {
             margin: 0 auto;
             display: flex;
             justify-content: center;
-            gap: 20px; /* Adjust the spacing between links */
+            gap: 20px;
         }
 
-        /* Custom size for the image */
+        /* Image styling */
         .small-image {
-            width: 1250px; /* Adjust the size as needed */
+            width: 1250px;
+            height: auto;
         }
 
         /* Banner styling */
@@ -68,6 +68,22 @@
             position: absolute;
             top: 20px;
             left: 20px;
+            color: white;
+        }
+
+        .title1 {
+            font-size: 55px;
+            color: #fff;
+        }
+
+        .title2 {
+            font-size: 55px;
+            color: #FFD700;
+        }
+
+        .year {
+            font-size: 45px;
+            color: #FFD700;
         }
 
         /* Content styles */
@@ -104,29 +120,30 @@
 
         .section p {
             color: #555;
-            text-align: center;
+            text-align: left;
         }
 
         /* Adjust the director section */
         .director-section {
             display: flex;
             flex-direction: row;
-            align-items: center;
-            justify-content: center;
+            align-items: flex-start;
+            justify-content: space-between;
             gap: 20px;
         }
 
         .director-text {
-            width: 60%;
-            text-align: center;
+            width: 70%;
+            text-align: left;
         }
 
         .director-image {
-            width: 200px;
+            width: 30%;
+            max-width: 250px; /* Restrict image size */
         }
 
         .director-image img {
-            width: 100%;
+            width: 100%; /* Ensure the image fits properly */
             border-radius: 8px;
         }
 
@@ -148,31 +165,14 @@
             margin-top: 30px;
         }
 
-        /* Media queries for responsiveness */
-        @media screen and (max-width: 768px) {
-            .title1, .title2 {
-                font-size: 40px;
-            }
-            .year {
-                font-size: 30px;
-            }
+        /* Media query for responsiveness */
+        @media (max-width: 768px) {
             .director-section {
                 flex-direction: column;
+                align-items: center;
             }
-            .director-text {
-                width: 100%;
-            }
-            .director-image {
-                width: 150px;
-            }
-        }
 
-        @media screen and (max-width: 480px) {
-            .navigation {
-                flex-direction: column;
-                gap: 10px;
-            }
-            .small-image {
+            .director-text, .director-image {
                 width: 100%;
             }
         }
@@ -194,7 +194,7 @@
         <a class="current" title="Home Page" href=".">ACCUEIL</a>
         <a title="About" href="about">A PROPOS</a>
         <a title="A propos" href="apropos.html">RESOURCES</a>
-        <a title="Nos Services" href="services.html">NOS SERVICES</a>
+        <a title="Nos Services" href="services.html">NOS SERVICES</a> 
         <a title="Tests de Langue" href="tests.html">TESTS DE LANGUE</a>
         <a title="Contact" href="contact.html">CONTACT</a>
     </div>
@@ -206,18 +206,29 @@
     </header>
 
     <main class="container">
+
         <div class="section">
             <h2>Etudier et Immigrer aux USA (EI-USA)</h2>
-            <p>Créé en 2021, EI-USA est un cabinet spécialisé dans le conseil en stratégie de formation et d’orientation des étudiants dans leur projet d’études aux USA. Plaçant l’avenir des étudiants au cœur de sa mission, notre cabinet s’est engagé à satisfaire au mieux leurs inquiétudes, boostant ainsi leur carrière pour lui donner une dimension internationale.</p>
-            <p>Depuis 2024, nous avons également intégré l'immigration par le biais de NIW-EB2, qui permet aux détenteurs d'un master ou d'un doctorat en science ou ingénierie, ou encore d'une licence suivie de 5 années d'expérience professionnelle, d'immigrer aux USA.</p>
+            <p>
+                Créé en 2021, EI-USA est un cabinet spécialisé dans le conseil en stratégie de formation et d’orientation des étudiants dans leur projet d’études aux USA. Plaçant l’avenir des étudiants au cœur de sa mission, notre cabinet s’est engagé à satisfaire au mieux leurs inquiétudes, boostant ainsi leur carrière pour lui donner une dimension internationale.
+            </p>
+            <p>
+                Depuis 2024, nous avons également intégré l'immigration par le biais de NIW-EB2, qui permet aux détenteurs d'un master ou d'un doctorat en science ou ingénierie, ou encore d'une licence suivie de 5 années d'expérience professionnelle, d'immigrer aux USA.
+            </p>
         </div>
 
         <div class="section director-section">
             <div class="director-text">
                 <h2>Mot du Directeur</h2>
-                <p>"Partir étudier à l’étranger, un rêve pour ceux qui s’y préparent, une expérience riche pour ceux qui en reviennent et surtout, un grand atout sur le CV très apprécié par les recruteurs. Aujourd’hui, de nombreux africains d'origine francophone partent étudier à l’étranger, mais peu savent qu'il est possible d'obtenir une admission aux USA.</p>
-                <p>Le processus d'immigration NIW est très peu connu du monde francophone. En général, les gens connaissent la DV-lottery, qui repose sur le hasard. Cependant, avec votre formation, vous pouvez facilement immigrer aux USA sans vous fier uniquement à la chance.</p>
-                <p>Chez EI-USA, nous vous offrons des services de qualité qui vous permettent de gagner du temps, d'améliorer votre professionnalisme et de renforcer votre confiance. Nous rêvons avec vous, vous orientons, et ensemble nous remportons le pari de la fiabilité et de l’implication."</p>
+                <p>
+                    "Partir étudier à l’étranger, un rêve pour ceux qui s’y préparent, une expérience riche pour ceux qui en reviennent et surtout, un grand atout sur le CV très apprécié par les recruteurs. Aujourd’hui, de nombreux africains d'origine francophone partent étudier à l’étranger, mais peu savent qu'il est possible d'obtenir une admission aux USA. 
+                </p>
+                <p>
+                    Le processus d'immigration NIW est très peu connu du monde francophone. En général, les gens connaissent la DV-lottery, qui repose sur le hasard. Cependant, avec votre formation, vous pouvez facilement immigrer aux USA sans vous fier uniquement à la chance.
+                </p>
+                <p>
+                    Chez EI-USA, nous vous offrons des services de qualité qui vous permettent de gagner du temps, d'améliorer votre professionnalisme et de renforcer votre confiance. Nous rêvons avec vous, vous orientons, et ensemble nous remportons le pari de la fiabilité et de l’implication."
+                </p>
             </div>
             <div class="director-image">
                 <img src="director.png" alt="Photo du Directeur Niyem Bawana">
@@ -226,14 +237,21 @@
 
         <div class="section section-values">
             <h2>Nos Valeurs</h2>
-            <p>Nos valeurs extériorisent notre identité et nous distinguent. Elles se manifestent au travers de nos actions quotidiennes, structurant notre approche professionnelle et façonnant nos relations avec toutes nos parties prenantes. Nos valeurs – Respect, Partage, Fiabilité et Satisfaction client – sont les fondations solides qui sous-tendent notre travail avec chaque client.</p>
+            <p>
+                Nos valeurs extériorisent notre identité et nous distinguent. Elles se manifestent au travers de nos actions quotidiennes, structurant notre approche professionnelle et façonnant nos relations avec toutes nos parties prenantes. Nos valeurs – Respect, Partage, Fiabilité et Satisfaction client – sont les fondations solides qui sous-tendent notre travail avec chaque client.
+            </p>
         </div>
 
         <div class="section section-vision">
             <h2>Notre Vision</h2>
-            <p>Notre vision est de devenir un partenaire stratégique pour nos clients dans leurs projets d’études et d'immigration aux USA, en leur offrant des services à forte valeur ajoutée, alliant innovation et qualité. Nous entendons être les pionniers en Afrique francophone de l’orientation scolaire vers les USA, en apportant des solutions efficaces aux préoccupations des étudiants et de leurs parents.</p>
-            <p>Nous nous engageons également à vous aider à réaliser le rêve américain via le programme NIW, permettant aux professionnels qualifiés d'immigrer. Nous rêvons avec vous, tout en œuvrant pour aider la population francophone aux USA à améliorer sa qualité de vie par l'éducation et l'intégration.</p>
+            <p>
+                Notre vision est de devenir un partenaire stratégique pour nos clients dans leurs projets d’études et d'immigration aux USA, en leur offrant des services à forte valeur ajoutée, alliant innovation et qualité. Nous entendons être les pionniers en Afrique francophone de l’orientation scolaire vers les USA, en apportant des solutions efficaces aux préoccupations des étudiants et de leurs parents. 
+            </p>
+            <p>
+                Nous nous engageons également à vous aider à réaliser le rêve américain via le programme NIW, permettant aux professionnels qualifiés d'immigrer. Nous rêvons avec vous, tout en œuvrant pour aider la population francophone aux USA à améliorer sa qualité de vie par l'éducation et l'intégration.
+            </p>
         </div>
+
     </main>
 
     <footer>
@@ -241,4 +259,5 @@
     </footer>
 
 </body>
+
 </html>
