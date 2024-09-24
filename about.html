@@ -73,32 +73,39 @@
 
         .title1 {
             font-size: 55px;
-            color: #fff;
+            color: #A52A2A;
         }
 
         .title2 {
             font-size: 55px;
-            color: #FFD700;
+            color: #4682B4;
         }
 
         .year {
             font-size: 45px;
-            color: #FFD700;
+            color: #696969;
         }
 
-        /* Content styles */
+        /* Body and container adjustments for centering */
         body {
             font-family: Arial, sans-serif;
             line-height: 1.6;
             margin: 0;
             padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f4f4f4;
         }
 
         .container {
             width: 90%;
-            margin: auto;
+            max-width: 1200px;
+            margin: 0 auto;
             padding: 20px;
-            overflow: hidden;
+            background-color: white;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
         }
 
         h1, h2, h3 {
@@ -120,31 +127,28 @@
 
         .section p {
             color: #555;
-            text-align: left;
+            text-align: center;
         }
 
         /* Adjust the director section */
         .director-section {
             display: flex;
-            flex-direction: row;
-            align-items: flex-start;
-            justify-content: space-between;
+            align-items: center;
+            justify-content: center;
             gap: 20px;
         }
 
         .director-text {
-            width: 70%;
-            text-align: left;
+            flex: 1;
         }
 
         .director-image {
-            width: 30%;
-            max-width: 250px; /* Restrict image size */
+            flex: 0 0 250px;
         }
 
         .director-image img {
-            width: 100%; /* Ensure the image fits properly */
-            border-radius: 20px;
+            width: 100%;
+            border-radius: 8px;
         }
 
         /* Section styling */
@@ -165,15 +169,15 @@
             margin-top: 30px;
         }
 
-        /* Media query for responsiveness */
-        @media (max-width: 768px) {
+        /* Responsive Design */
+        @media screen and (max-width: 768px) {
             .director-section {
                 flex-direction: column;
                 align-items: center;
             }
 
-            .director-text, .director-image {
-                width: 100%;
+            .director-image {
+                margin-bottom: 20px;
             }
         }
     </style>
@@ -231,7 +235,7 @@
                 </p>
             </div>
             <div class="director-image">
-                <img src="director.png" alt="Photo du Directeur Niyem Bawana">
+                <img src="assets/director.png" alt="Photo du Directeur Niyem Bawana">
             </div>
         </div>
 
@@ -243,6 +247,7 @@
         </div>
 
         <div class="section section-vision">
+   
             <h2>Notre Vision</h2>
             <p>
                 Notre vision est de devenir un partenaire stratégique pour nos clients dans leurs projets d’études et d'immigration aux USA, en leur offrant des services à forte valeur ajoutée, alliant innovation et qualité. Nous entendons être les pionniers en Afrique francophone de l’orientation scolaire vers les USA, en apportant des solutions efficaces aux préoccupations des étudiants et de leurs parents. 
