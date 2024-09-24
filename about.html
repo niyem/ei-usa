@@ -12,205 +12,44 @@
     <title>Qui Sommes-nous !</title>
     <link rel="stylesheet" type="text/css" href="assets/main.css">
 
-    <style>
-        /* Font size adjustments */
-        .title1 {
-            font-size: 55px;
-        }
 
-        .title2 {
-            font-size: 55px;
-        }
-
-        .year {
-            font-size: 45px;
-        }
-
-        /* Styling for the navigation */
-        .navigation {
-            text-align: center;
-            padding: 10px 20px;
-        }
-
-        .navigation a {
-            font-size: 18px;
-            text-decoration: none;
-            padding: 10px 20px;
-            display: inline-block;
-            color: #333;
-        }
-
-        .navigation a:hover {
-            color: #FFD700;
-        }
-
-        .navigation {
-            margin: 0 auto;
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-        }
-
-        /* Image styling */
-        .small-image {
-            width: 100%; /* Ensure the image scales with the screen */
-            max-width: 1250px; /* Add max width for larger screens */
-            height: auto;
-        }
-
-        /* Banner styling */
-        .banner {
-            position: relative;
-            text-align: center;
-            margin-bottom: 20px;
-        }
-
-        .top-left {
-            position: absolute;
-            top: 20px;
-            left: 20px;
-            color: white;
-        }
-
-        .title1 {
-            font-size: 55px;
-            color: #ff0000; /* Changed to red */
-        }
-
-        .title2 {
-            font-size: 55px;
-            color: #1E90FF; /* Changed to blue */
-        }
-
-        .year {
-            font-size: 45px;
-            color: #333; /* Changed to gray */
-        }
-
-        /* Content styles */
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-        }
-
-        .container {
-            width: 100%;
-            max-width: 1250px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-
-        h1, h2, h3 {
-            text-align: center;
-            color: #333;
-        }
-
-        .section {
-            background-color: #f4f4f4;
-            padding: 20px;
-            margin: 20px 0;
-            border-radius: 8px;
-            box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
-        }
-
-        .section h2 {
-            color: #1E90FF;
-        }
-
-        .section p {
-            color: #555;
-            text-align: justify; /* Added justify for better text alignment */
-        }
-
-        /* Adjust the director section */
-        .director-section {
-            display: flex;
-            flex-direction: row;
-            align-items: flex-start;
-            justify-content: space-between;
-            gap: 20px;
-            flex-wrap: wrap; /* Ensure it wraps on smaller screens */
-        }
-
-        .director-text {
-            width: 65%;
-        }
-
-        .director-image {
-            width: 30%;
-            text-align: right;
-        }
-
-        .director-image img {
-            width: 100%;
-            max-width: 200px; /* Ensure the image fits properly */
-            border-radius: 8px;
-        }
-
-        /* Section styling */
-        .section-values {
-            background-color: #87CEEB;
-        }
-
-        .section-vision {
-            background-color: #FFD700;
-        }
-
-        /* Footer styles */
-        footer {
-            text-align: center;
-            padding: 20px;
-            background-color: #333;
-            color: white;
-            margin-top: 30px;
-        }
-
-        /* Media query for responsiveness */
-        @media (max-width: 768px) {
-            .director-section {
-                flex-direction: column;
-                align-items: center;
-            }
-
-            .director-text {
-                width: 100%;
-                text-align: center;
-            }
-
-            .director-image {
-                width: 100%;
-                text-align: center;
-            }
-
-            .director-image img {
-                margin: 0 auto;
-                max-width: 150px;
-            }
-        }
-    </style>
 </head>
+<style>
+    /* Updated navigation styling */
+    .navigation {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 30px; /* Add more space between items */
+        padding: 10px 0;
+        background-color: #fff; /* Set a background color if needed */
+        text-align: center;
+    }
 
-<body>
+    .navigation a {
+        font-size: 18px;
+        text-decoration: none;
+        padding: 10px 15px;
+        display: inline-block;
+        color: #333;
+        white-space: nowrap; /* Ensure that the text stays on one line */
+    }
 
-    <!-- Banner section -->
-    <div class="banner">
-        <img src="assets/EI-USA1.png" alt="Etudes et Immigration aux USA" class="small-image">
-        <div class="top-left">
-            <span class="title1">Etudes et </span><span class="title2">Immigration</span> <span class="year">aux USA</span>
-        </div>
-    </div>
+    .navigation a:hover {
+        color: #FFD700;
+    }
+</style>
 
-    <!-- Navigation section -->
-    <div class="navigation">
-        <a class="current" title="Home Page" href=".">ACCUEIL</a>
-        <a title="About" href="about">A PROPOS</a>
-        <a title="A propos" href="apropos.html">RESOURCES</a>
-        <a title="Nos Services" href="services.html">NOS SERVICES</a>
-        <a title="Tests de Langue" href="tests.html">TESTS DE LANGUE</a>
-        <a title="Contact" href="contact.html">CONTACT</a>
-    </div>
+<!-- Updated navigation section -->
+<div class="navigation">
+    <a title="Home Page" href=".">ACCUEIL</a>
+    <a title="About" href="about">A PROPOS</a>
+    <a title="Resources" href="resources.html">RESOURCES</a>
+    <a title="Services" href="services.html">NOS SERVICES</a> 
+    <a title="Language Tests" href="tests.html">TESTS DE LANGUE</a>
+    <a title="Contact" href="contact.html">CONTACT</a>
+</div>
+
 
     <header>
         <div class="container">
