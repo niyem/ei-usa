@@ -1,25 +1,45 @@
 <!DOCTYPE html>
-<html lang='fr'>
+<html lang="fr">
 
 <head>
-    <link rel="shortcut icon" type="image/png" href="assets/favicon.png"/>
-    <link rel="stylesheet" type="text/css" media="all" href="assets/main.css"/>
+    <link rel="shortcut icon" type="image/png" href="assets/favicon.png" />
+    <link rel="stylesheet" type="text/css" media="all" href="assets/main.css" />
     <meta name="description" content="Nos Services - Etudier ou Immigrer aux USA">
     <title>Nos Services - Etudier ou Immigrer aux USA</title>
-
     <style>
-        /* Add custom font size adjustments */
-        .title1 {
-            font-size: 55px;
-        }
-        .title2 {
-            font-size: 55px;
-        }
-        .year {
-            font-size: 45px;
+        .welcome {
+            text-align: center;
+            margin: 50px auto;
+            font-size: 20px;
         }
 
-        /* Styling for the navigation */
+        .dynamic-links {
+            text-align: center;
+            margin: 20px auto;
+        }
+
+        .dynamic-links a {
+            font-size: 18px;
+            text-decoration: none;
+            padding: 15px 30px;
+            margin: 10px;
+            display: inline-block;
+            background-color: #FFD700;
+            color: #333;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .dynamic-links a:hover {
+            background-color: #FFA500;
+            color: white;
+        }
+
+        .content-section {
+            display: none;
+            margin: 20px;
+        }
+
         .navigation {
             text-align: center;
             padding: 10px 20px;
@@ -37,124 +57,82 @@
             color: #FFD700;
         }
 
-        /* Center navigation links */
         .navigation {
             margin: 0 auto;
             display: flex;
             justify-content: center;
             gap: 20px;
         }
-
-        /* Custom size for the image */
-        .small-image {
-            width: 1250px;
-        }
-
-        /* Services content styling */
-        .content {
-            margin: 40px 20px;
-            font-size: 18px;
-            line-height: 1.6;
-        }
-
-        .content h2 {
-            margin-bottom: 20px;
-        }
-        
-        .bouquet-list {
-            margin: 20px 0;
-        }
-
-        .bouquet-item {
-            margin-bottom: 20px;
-        }
-
-        .bouquet-status {
-            font-weight: bold;
-            color: #FFD700;
-        }
-
-        /* Table styling */
-        table {
-            width: 100%;
-            border-collapse: collapse;
-        }
-
-        th, td {
-            padding: 10px;
-            border: 1px solid #ddd;
-        }
-
-        th {
-            background-color: #f2f2f2;
-        }
-
-        .link {
-            color: #FFD700;
-        }
     </style>
+    <script>
+        function showSection(sectionId) {
+            document.querySelectorAll('.content-section').forEach(section => {
+                section.style.display = 'none';
+            });
+            document.getElementById(sectionId).style.display = 'block';
+        }
+    </script>
 </head>
 
 <body>
 
-    <div class="banner">
-        <img src="assets/EI-USA1.png" alt="Etudier ou Immigrer aux USA" class="small-image">
-        <div class="top-left">
-            <span class="title1">Etudier ou </span><span class="title2">Immigrer</span> <span class="year">aux USA</span>
-        </div>
-    </div>
-
-    <!-- Updated navigation section -->
+    <!-- Navigation Section -->
     <div class="navigation">
         <a title="Home Page" href="index.html">ACCUEIL</a>
-         <a title="About" href="about.html">A PROPOS</a>
-        
-        <a class="current" title="Nos Services" href="services.html">NOS SERVICES</a> 
+        <a title="About" href="about.html">A PROPOS</a>
+        <a class="current" title="Nos Services" href="services.html">NOS SERVICES</a>
         <a title="Tests de Langue" href="tests.html">TESTS DE LANGUE</a>
-        <a title="A propos" href="apropos">ACHAT</a>
+        <a title="Achat" href="apropos">ACHAT</a>
         <a title="Contact" href="contact.html">CONTACT</a>
     </div>
 
-    <div class="content">
-        <h2>I. Etudier aux USA</h2>
+    <!-- Welcome Message -->
+    <div class="welcome">
+        <h2>Bienvenue sur la page de nos services!</h2>
+        <p>Veuillez cliquer ci-dessous sur le lien du type de service que vous désirez!</p>
+    </div>
+
+    <!-- Dynamic Links -->
+    <div class="dynamic-links">
+        <a href="javascript:void(0);" onclick="showSection('admissions')">Etudier aux USA</a>
+        <a href="javascript:void(0);" onclick="showSection('immigration')">Immigrer aux USA via le NIW</a>
+    </div>
+
+    <!-- Admissions Section -->
+    <div id="admissions" class="content-section">
+        <h2>Etudier aux USA</h2>
         <p>
-            Vous êtes bachelier ou vous avez obtenu une licence ou un master et désirez poursuivre vos études aux USA mais ne savez pas comment procéder, ne vous inquiétez pas. <b>EI-USA</b> est là pour vous assister tout au long de votre processus académique.  
+            Vous êtes bachelier ou vous avez obtenu une licence ou un master et désirez poursuivre vos études aux USA mais ne savez pas comment procéder, ne vous inquiétez pas. <b>EI-USA</b> est là pour vous assister tout au long de votre processus académique.
         </p>
         <p>
             À <b>EI-USA</b>, nous évaluons votre profil et vous assistons dans la sélection des universités où vous souhaitez étudier aux USA. Nous vous offrons des conseils pour la préparation des tests d'anglais et vous aidons dans la préparation et la soumission de vos demandes d'admission dans les universités américaines. Tout ceci à des frais abordables.
         </p>
-        
+
         <h2>Services d'Admission</h2>
-
-
-
-<div class="bouquet-list">
-    <div class="bouquet-item">
-        <h3>Honoraires de Traitement de Dossier</h3>
-        <p>
-            Les honoraires pour le traitement de votre dossier d'admission s'élèvent à <b>1 000 000 FCFA</b>.
-        </p>
-        <p class="bouquet-status">Disponible</p>
-    </div>
-
-    <div class="bouquet-item">
-        <h3>Cours de Soutien en Langue Anglaise et Préparation aux Tests Standardisés</h3>
-        <p>
-            Nous proposons des cours de soutien en langue anglaise ainsi que des cours de préparation aux tests standardisés du TOEFL. Le coût est fixé à <b>50 000 FCFA par mois</b>. 
-            <br> 
-            <b>EI-USA recommande 6 mois de cours de soutien en anglais suivis de 4 mois de préparation au TOEFL</b>, afin de mieux préparer les clients à atteindre le score minimum de 80 sur 120 requis par les universités américaines pour les admissions.
-        </p>
-        <p class="bouquet-status">Disponible à partir de mars 2025</p>
-    </div>
-</div>
-
-
+        <div class="bouquet-list">
+            <div class="bouquet-item">
+                <h3>Honoraires de Traitement de Dossier</h3>
+                <p>
+                    Les honoraires pour le traitement de votre dossier d'admission s'élèvent à <b>1 000 000 FCFA</b>.
+                </p>
+                <p class="bouquet-status">Disponible</p>
+            </div>
+            <div class="bouquet-item">
+                <h3>Cours de Soutien en Langue Anglaise et Préparation aux Tests Standardisés</h3>
+                <p>
+                    Nous proposons des cours de soutien en langue anglaise ainsi que des cours de préparation aux tests standardisés du TOEFL. Le coût est fixé à <b>50 000 FCFA par mois</b>.
+                    <br>
+                    <b>EI-USA recommande 6 mois de cours de soutien en anglais suivis de 4 mois de préparation au TOEFL</b>, afin de mieux préparer les clients à atteindre le score minimum de 80 sur 120 requis par les universités américaines pour les admissions.
+                </p>
+                <p class="bouquet-status">Disponible à partir de mars 2025</p>
+            </div>
+        </div>
         <h2>Plan de Paiement</h2>
         <p>
-           Le paiement peut se faire en trois tranches maximum avant la soumission de votre demande d'admission dans les différentes universités. Il est à noter que seul le montant relatif au traitement de votre dossier de candidature est payable en tranches ; les cours de soutien en langue anglaise et de préparation au TOEFL doivent être réglés mensuellement avant la participation de chaque session. 
+            Le paiement peut se faire en trois tranches maximum avant la soumission de votre demande d'admission dans les différentes universités. Il est à noter que seul le montant relatif au traitement de votre dossier de candidature est payable en tranches ; les cours de soutien en langue anglaise et de préparation au TOEFL doivent être réglés mensuellement avant la participation à chaque session.
         </p>
 
-        <h2>Frais Supplémentaires pour les Candidats au Doctorat</h2>
+       <h2>Frais Supplémentaires pour les Candidats au Doctorat</h2>
         <p>En plus des frais d'admission, voici les frais supplémentaires à prévoir :</p>
 
         <h3>1. Traduction et Évaluation des Documents</h3>
@@ -187,7 +165,7 @@
                 <td><a href="https://tg.usembassy.gov/fr/services-de-visa/" class="link">Frais de demande de visa F-1</a></td>
                 <td>120 300 FCFA</td>
             </tr>
-            <tr>
+                       <tr>
                 
                 <td>Examen médical avant l'entretien</td>
                 <td>Environ 40 000 FCFA</td>
@@ -217,7 +195,7 @@
 
         <h3>4. Dépenses Initiales de Vie</h3>
         <table>
-            <tr>
+                        <tr>
                 <th>Service</th>
                 <th>Coût (FCFA)</th>
             </tr>
@@ -248,8 +226,7 @@
             <li><a href="https://www.instacart.com/store/kroger/storefront?gad_source=1&gclid=Cj0KCQjw3vO3BhCqARIsAEWblcAAQ7XHDZjz_vUbtZSjiG7jt9IU5SDk1QSxmSY1ezHHK-932jJEQ10aAuQMEALw_wcB&ksadid=&kskwid=15003816&utm_campaign=ad_demand_search_partner_kroger_exact_us_AUDACT&utm_content=accountid-1732890876_campaignid-842487728_adgroupid-46289614461_device-c_adid-673122694786_network-g&utm_medium=sem&utm_source=instacart_google&utm_term=matchtype-e_keyword-kroger_targetid-kwd-295648508599_locationid-9199231" class="link">Kroger </a></li>
             <li><a href="https://www.amazon.com/?tag=admarketus-20&ref=pd_sl_7097e1122fb0f552b0529af7da798fc68428cea9d1d6b927140b32c0&mfadid=adm" class="link">Amazon (pour les achats en ligne)</a></li>
         </ul>
-
-        <h3>Résumé des Coûts Estimés</h3>
+                <h3>Résumé des Coûts Estimés</h3>
         <table>
             <tr>
                 <th>Catégorie</th>
@@ -276,28 +253,30 @@
                 <th>Environ 2 805 300 FCFA</th>
             </tr>
         </table>
+        
+    </div>
 
-       <h3>II. Immigrer aux USA via le National Interest Waiver (NIW)</h3>
-<p>
-    Si vous êtes un professionnel titulaire d'une licence avec au moins 5 années d'expérience dans votre domaine, ou si vous avez un master ou un doctorat dans un domaine scientifique ou d’ingénierie, vous pouvez immigrer aux USA par le biais du <b>National Interest Waiver (NIW)</b>.
-</p>
-<p>
-    Le <b>NIW</b> permet de demander une carte verte sans besoin d'une offre d'emploi ou de parrainage par un employeur. Cela est destiné à ceux dont le travail profite de manière significative aux États-Unis. Le processus implique plusieurs étapes, du dépôt de la pétition jusqu'à l'obtention du visa.
-</p>
-
-<h4>Services Offerts par EI-USA</h4>
-<p>
-    À <b>EI-USA</b>, nous vous assistons dans le processus de soumission de votre pétition auprès du service d'immigration des USA. Nos honoraires pour ces services s'élèvent à <b>5 000 dollars américains</b>, payables en trois tranches :
-</p>
-<ul>
-    <li>1ère tranche : <b>2 000 dollars</b> à la signature du contrat.</li>
-    <li>2ème tranche : <b>2 000 dollars</b> pendant la redaction de votre petition.</li>
-    <li>3ème tranche : <b>1 000 dollars</b> lors de la soumission de la pétition à USCIS.</li>
-</ul>
-<p>
-    Cependant, si le client règle la totalité des honoraires à la signature du contrat, il bénéficie d'une réduction de <b>10%</b>, soit un montant total de <b>4 500 dollars</b>.
-</p>
-
+    <!-- Immigration Section -->
+    <div id="immigration" class="content-section">
+        <h2> Immigrer aux USA via le National Interest Waiver (NIW)</h2>
+        <p>
+            Si vous êtes un professionnel titulaire d'une licence avec au moins 5 années d'expérience dans votre domaine, ou si vous avez un master ou un doctorat dans un domaine scientifique ou d’ingénierie, vous pouvez immigrer aux USA par le biais du <b>National Interest Waiver (NIW)</b>.
+        </p>
+        <p>
+            Le <b>NIW</b> permet de demander une carte verte sans besoin d'une offre d'emploi ou de parrainage par un employeur. Cela est destiné à ceux dont le travail profite de manière significative aux États-Unis. Le processus implique plusieurs étapes, du dépôt de la pétition jusqu'à l'obtention du visa.
+        </p>
+        <h4>Services Offerts par EI-USA</h4>
+        <p>
+            À <b>EI-USA</b>, nous vous assistons dans le processus de soumission de votre pétition auprès du service d'immigration des USA. Nos honoraires pour ces services s'élèvent à <b>5 000 dollars américains</b>, payables en trois tranches :
+        </p>
+        <ul>
+            <li>1ère tranche : <b>2 000 dollars</b> à la signature du contrat.</li>
+            <li>2ème tranche : <b>2 000 dollars</b> pendant la rédaction de votre pétition.</li>
+            <li>3ème tranche : <b>1 000 dollars</b> lors de la soumission de la pétition à USCIS.</li>
+        </ul>
+        <p>
+            Cependant, si le client règle la totalité des honoraires à la signature du contrat, il bénéficie d'une réduction de <b>10%</b>, soit un montant total de <b>4 500 dollars</b>.
+        </p>
 
 <h4>Critères d'Éligibilité</h4>
 <ul>
@@ -323,7 +302,8 @@
         <th><a href="https://www.uscis.gov/sites/default/files/document/forms/g-1055.pdf" target="_blank">Coût (USD)</a></th>
 
     </tr>
-    <tr>
+
+        <tr>
         <td>Pétition I-140</td>
         <td>Environ 715 $</td>
     </tr>
@@ -385,6 +365,7 @@
 </p>
 
         <p><b>Avec EI-USA, votre satisfaction est notre priorité.</b> Nous espérons vous compter bientôt parmi nos clients heureux.</p>
+        
     </div>
 
     <footer>
@@ -392,4 +373,5 @@
     </footer>
 
 </body>
+
 </html>
