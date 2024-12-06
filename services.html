@@ -96,6 +96,7 @@
     <div class="dynamic-links">
         <a href="javascript:void(0);" onclick="showSection('admissions')">Etudier aux USA</a>
         <a href="javascript:void(0);" onclick="showSection('immigration')">Immigrer aux USA via le NIW</a>
+        <a href="javascript:void(0);" onclick="showSection('immigration')">Autres Services</a>
     </div>
 
     <!-- Admissions Section -->
@@ -367,6 +368,79 @@
         <p><b>Avec EI-USA, votre satisfaction est notre priorité.</b> Nous espérons vous compter bientôt parmi nos clients heureux.</p>
         
     </div>
+
+<!-- Autres Services Section -->
+<div id="autres-services" class="content-section">
+    <h2>Autres Services</h2>
+    <p>Cliquez sur un service pour voir sa description détaillée.</p>
+    <ul>
+        <li><a href="javascript:void(0);" onclick="toggleServiceDescription('cv-writing')">Écriture de CV (Format Américain)</a></li>
+        <li><a href="javascript:void(0);" onclick="toggleServiceDescription('proofreading-documents')">Relecture Scientifique</a></li>
+        <li><a href="javascript:void(0);" onclick="toggleServiceDescription('scholarship-applications')">Relecture Bourses</a></li>
+        <li><a href="javascript:void(0);" onclick="toggleServiceDescription('website-development')">Développement de Sites Web</a></li>
+    </ul>
+
+    <!-- Service Descriptions -->
+    <div id="cv-writing" class="service-description">
+        <h3>Écriture de CV (Format Américain)</h3>
+        <p>Nous vous aidons à créer un CV professionnel adapté aux standards américains, afin de maximiser vos opportunités académiques et professionnelles.</p>
+    </div>
+
+    <div id="proofreading-documents" class="service-description">
+        <h3>Relecture Scientifique</h3>
+        <p>Améliorez la qualité de vos documents scientifiques grâce à notre service de relecture approfondie et professionnelle.</p>
+    </div>
+
+    <div id="scholarship-applications" class="service-description">
+        <h3>Relecture Bourses</h3>
+        <p>Recevez des commentaires experts et des corrections sur vos candidatures pour des bourses d'études ou des projets postdoctoraux.</p>
+    </div>
+
+    <div id="website-development" class="service-description">
+        <h3>Développement de Sites Web</h3>
+        <p>Créez un site web personnalisé pour mettre en valeur votre parcours académique, vos recherches ou vos projets professionnels.</p>
+    </div>
+</div>
+
+<!-- Add to the script section -->
+<script>
+    function toggleServiceDescription(serviceId) {
+        // Hide all service descriptions
+        document.querySelectorAll('.service-description').forEach(desc => {
+            desc.style.display = 'none';
+        });
+
+        // Show the selected service description
+        document.getElementById(serviceId).style.display = 'block';
+    }
+</script>
+
+<!-- Add to CSS -->
+<style>
+    .service-description {
+        display: none;
+        margin: 20px 0;
+        border: 1px solid #ddd;
+        padding: 15px;
+        border-radius: 5px;
+        background-color: #f9f9f9;
+    }
+
+    ul li {
+        margin: 10px 0;
+    }
+
+    ul li a {
+        text-decoration: none;
+        color: #0056b3;
+    }
+
+    ul li a:hover {
+        text-decoration: underline;
+        color: #003d80;
+    }
+</style>
+
 
     <footer>
         &copy; 2024 EI-USA &nbsp;|&nbsp; Designed by EI-USA Web Team
