@@ -96,7 +96,7 @@
     <div class="dynamic-links">
         <a href="javascript:void(0);" onclick="showSection('admissions')">Etudier aux USA</a>
         <a href="javascript:void(0);" onclick="showSection('immigration')">Immigrer aux USA via le NIW</a>
-        <a href="javascript:void(0);" onclick="showSection('immigration')">Autres Services</a>
+        <a href="javascript:void(0);" onclick="showSection('autres-services')">Autres Services</a>
     </div>
 
     <!-- Admissions Section -->
@@ -369,7 +369,7 @@
         
     </div>
 
-<!-- Autres Services Section -->
+ <!-- Autres Services Section -->
 <div id="autres-services" class="content-section">
     <h2>Autres Services</h2>
     <p>Cliquez sur un service pour voir sa description détaillée.</p>
@@ -402,6 +402,47 @@
     </div>
 </div>
 
+<!-- Add to the script section -->
+<script>
+    function toggleServiceDescription(serviceId) {
+        // Hide all service descriptions
+        document.querySelectorAll('.service-description').forEach(desc => {
+            desc.style.display = 'none';
+        });
+
+        // Show the selected service description
+        document.getElementById(serviceId).style.display = 'block';
+    }
+</script>
+
+<!-- Add to CSS -->
+<style>
+    .service-description {
+        display: none;
+        margin: 20px 0;
+        border: 1px solid #ddd;
+        padding: 15px;
+        border-radius: 5px;
+        background-color: #f9f9f9;
+    }
+
+    ul li {
+        margin: 10px 0;
+    }
+
+    ul li a {
+        text-decoration: none;
+        color: #0056b3;
+    }
+
+    ul li a:hover {
+        text-decoration: underline;
+        color: #003d80;
+    }
+</style>
+
+
+    
     <footer>
         &copy; 2024 EI-USA &nbsp;|&nbsp; Designed by EI-USA Web Team
     </footer>
